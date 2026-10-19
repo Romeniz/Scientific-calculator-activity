@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Calculator</title>
+    <link rel="stylesheet" href="eme.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="top">
+            <button class="menu-button" onclick="toggleMenu()">☰</button>
+            <h2 id="title">Standard</h2>
+        </div>
+
+        <div class="side-menu" id="sideMenu">
+
+            <button onclick="showStandard()">
+                Standard
+            </button>
+
+            <button onclick="showScientific()">
+                Scientific
+            </button>
+
+        </div>
+
+        <input type="text" id="display" readonly>
+
+        <div class="buttons standard">
+
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="addValue('/')">÷</button>
+            <button onclick="addValue('%')">%</button>
+            <button onclick="addValue('*')">×</button>
+            
+
+            <button onclick="addValue('7')">7</button>
+            <button onclick="addValue('8')">8</button>
+            <button onclick="addValue('9')">9</button>
+            <button onclick="addValue('-')">−</button>
+
+            <button onclick="addValue('4')">4</button>
+            <button onclick="addValue('5')">5</button>
+            <button onclick="addValue('6')">6</button>
+            <button onclick="addValue('+')">+</button>
+
+            <button onclick="addValue('1')">1</button>
+            <button onclick="addValue('2')">2</button>
+            <button onclick="addValue('3')">3</button>
+            <button onclick="calculate()">=</button>
+
+            <button onclick="addValue('.')">.</button>
+            <button onclick="addValue('0')">0</button>
+            <button onclick="changeSign()">+/-</button>
+            <button onclick="deleteLast()">⌫</button>
+
+        </div>
+
+        <div class="buttons scientific">
+
+            <button onclick="scientific('sin')">sin</button>
+            <button onclick="scientific('cos')">cos</button>
+            <button onclick="scientific('tan')">tan</button>
+            <button onclick="scientific('sqrt')">√</button>
+
+            <button onclick="scientific('square')">x²</button>
+            <button onclick="scientific('log')">log</button>
+            <button onclick="scientific('ln')">ln</button>
+            <button onclick="addValue('**')">xʸ</button>
+
+            <button onclick="addValue('7')">7</button>
+            <button onclick="addValue('8')">8</button>
+            <button onclick="addValue('9')">9</button>
+            <button onclick="addValue('/')">÷</button>
+
+            <button onclick="addValue('4')">4</button>
+            <button onclick="addValue('5')">5</button>
+            <button onclick="addValue('6')">6</button>
+            <button onclick="addValue('*')">×</button>
+
+            <button onclick="addValue('1')">1</button>
+            <button onclick="addValue('2')">2</button>
+            <button onclick="addValue('3')">3</button>
+            <button onclick="addValue('-')">−</button>
+
+            <button onclick="addValue('0')">0</button>
+            <button onclick="addValue('.')">.</button>
+            <button onclick="addValue('+')">+</button>
+            <button onclick="calculate()">=</button>
+
+            <button onclick="addValue('(')">(</button>
+            <button onclick="addValue(')')">)</button>
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="deleteLast()">⌫</button>
+
+            <button onclick="addValue('%')">%</button>
+            <button onclick="addValue('Math.PI')">π</button>
+
+        </div>
+    </div>
+
+    <script src="eme.js"></script>
+
+</body>
+</html>
